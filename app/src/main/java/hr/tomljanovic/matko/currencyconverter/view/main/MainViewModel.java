@@ -1,12 +1,12 @@
-package hr.tomljanovic.matko.uhpproject.viewmodel;
+package hr.tomljanovic.matko.currencyconverter.view.main;
 
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.ViewModel;
 
 import java.util.List;
 
-import hr.tomljanovic.matko.uhpproject.model.CurrencyModel;
-import hr.tomljanovic.matko.uhpproject.repository.CurrencyRepository;
+import hr.tomljanovic.matko.currencyconverter.model.CurrencyModel;
+import hr.tomljanovic.matko.currencyconverter.repository.CurrencyRepository;
 
 public class MainViewModel extends ViewModel {
     private CurrencyRepository repository;

@@ -1,4 +1,4 @@
-package hr.tomljanovic.matko.uhpproject;
+package hr.tomljanovic.matko.currencyconverter;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

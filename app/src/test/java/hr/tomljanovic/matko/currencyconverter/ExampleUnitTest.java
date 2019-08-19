@@ -1,4 +1,4 @@
-package hr.tomljanovic.matko.uhpproject;
+package hr.tomljanovic.matko.currencyconverter;
 
 import org.junit.Test;
 

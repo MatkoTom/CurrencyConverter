@@ -1,4 +1,4 @@
-package hr.tomljanovic.matko.uhpproject.model;
+package hr.tomljanovic.matko.currencyconverter.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

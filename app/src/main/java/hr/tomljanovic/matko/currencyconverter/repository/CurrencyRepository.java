@@ -1,12 +1,12 @@
-package hr.tomljanovic.matko.uhpproject.repository;
+package hr.tomljanovic.matko.currencyconverter.repository;
 
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.LiveDataReactiveStreams;
 
 import java.util.List;
 
-import hr.tomljanovic.matko.uhpproject.adapter.RetrofitAdapter;
-import hr.tomljanovic.matko.uhpproject.model.CurrencyModel;
+import hr.tomljanovic.matko.currencyconverter.network.retrofit.RetrofitAdapter;
+import hr.tomljanovic.matko.currencyconverter.model.CurrencyModel;
 import io.reactivex.schedulers.Schedulers;
 
 public class CurrencyRepository {

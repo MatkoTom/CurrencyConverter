@@ -1,4 +1,4 @@
-package hr.tomljanovic.matko.uhpproject;
+package hr.tomljanovic.matko.currencyconverter.view.main;
 
 import android.app.Activity;
 import android.arch.lifecycle.Observer;
@@ -22,8 +22,9 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import hr.tomljanovic.matko.uhpproject.model.CurrencyModel;
-import hr.tomljanovic.matko.uhpproject.viewmodel.MainViewModel;
+import hr.tomljanovic.matko.currencyconverter.R;
+import hr.tomljanovic.matko.currencyconverter.model.CurrencyModel;
+import hr.tomljanovic.matko.currencyconverter.utils.Const;
 
 public class MainActivity extends AppCompatActivity {
     @BindView(R.id.fromSpinner)
@@ -113,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
         } else {
-            Toast.makeText(this, "Please enter an amount to convert!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.please_enter_ammount), Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -130,13 +131,13 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        outState.putString("myString", tvResult.getText().toString());
+        outState.putString(Const.InstanceState.STRING_INSTANCE, tvResult.getText().toString());
     }
 
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
-        String result = savedInstanceState.getString("myString");
+        String result = savedInstanceState.getString(Const.InstanceState.STRING_INSTANCE);
         tvResult.setText(result);
     }
 }
